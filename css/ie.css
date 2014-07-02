@@ -1,0 +1,26 @@
+.ac-container input:checked + label:after {
+    content: none;
+}
+
+.ac-container label {
+    cursor: default;
+}
+
+.esriSimpleSlider {
+    display: block;
+}
+
+#homeDiv {
+    position: absolute;
+    top: 125px;
+    left: 4px;
+    z-index: 50;
+}
+
+#search {
+    display: block;
+}
+
+.top-bar-title {
+    display: block
+}
