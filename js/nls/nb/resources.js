@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "å_Unable to create map_ø"
+            error: "Kan ikke opprette kart"
         }, 
-        tools: {
-        	legend: "å_Legend_ø",
-        	 about: "å_About_ø"
+        tools: {         
+            search: {
+                error: "Finner ikke lokasjonen",
+                notWhatYouWanted: "Ikke den du ville ha?",
+                selectAnother: "Velg en annen lokasjon",
+                currentLocation: "Gjeldende lokasjon",
+                title: "Lokasjon"
+            },
+        	legend: "Tegnforklaring",
+        	 about: "Om"
         }
     })
-   
 );

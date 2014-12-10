@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "ķ_Unable to create map_ū"
+            error: "Nevar izveidot karti"
         }, 
-        tools: {
-        	legend: "ķ_Legend_ū",
-        	 about: "ķ_About_ū"
+        tools: {         
+            search: {
+                error: "Izvietojumu nevarēja atrast",
+                notWhatYouWanted: "Vēlējāties kaut ko citu?",
+                selectAnother: "Izvēlieties citu izvietojumu",
+                currentLocation: "Pašreizējais izvietojums",
+                title: "Izvietojums"
+            },
+        	legend: "Apzīmējumi",
+        	 about: "Par"
         }
     })
-   
 );

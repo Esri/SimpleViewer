@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "Å_Unable to create map_ö"
+            error: "Karttaa ei voi luoda"
         }, 
-        tools: {
-        	legend: "Å_Legend_ö",
-        	 about: "Å_About_ö"
+        tools: {         
+            search: {
+                error: "Sijaintia ei löytynyt",
+                notWhatYouWanted: "Etkö löytänyt etsimääsi?",
+                selectAnother: "Valitse toinen sijainti",
+                currentLocation: "Nykyinen sijainti",
+                title: "Sijainti"
+            },
+        	legend: "Selite",
+        	 about: "Tietoja"
         }
     })
-   
 );

@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "تعذر إنشاء خريطة"
+            error: "يتعذر إنشاء الخريطة"
         }, 
-        tools: {
+        tools: {         
+            search: {
+                error: "تعذر العثور على الموقع",
+                notWhatYouWanted: "أليس هذا ما تريده؟",
+                selectAnother: "تحديد موقع آخر",
+                currentLocation: "الموقع الحالي",
+                title: "الموقع"
+            },
         	legend: "وسيلة الإيضاح",
         	 about: "حول"
         }
     })
-   
 );

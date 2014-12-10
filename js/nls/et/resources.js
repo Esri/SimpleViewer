@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "Š_Unable to create map_ä"
+            error: "Kaardi loomine ebaõnnestus"
         }, 
-        tools: {
-        	legend: "Š_Legend_ä",
-        	 about: "Š_About_ä"
+        tools: {         
+            search: {
+                error: "Asukohta ei leitud",
+                notWhatYouWanted: "Ei ole see, mida soovisid?",
+                selectAnother: "Vali muu asukoht",
+                currentLocation: "Praegune asukoht",
+                title: "Asukoht"
+            },
+        	legend: "Legend",
+        	 about: "Info"
         }
     })
-   
 );

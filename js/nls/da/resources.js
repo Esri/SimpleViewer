@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "ø_Unable to create map_å"
+            error: "Kan ikke oprette kort"
         }, 
-        tools: {
-        	legend: "ø_Legend_å",
-        	 about: "ø_About_å"
+        tools: {         
+            search: {
+                error: "Placeringen blev ikke fundet",
+                notWhatYouWanted: "Var det ikke det, du ville?",
+                selectAnother: "Vælg et andet sted",
+                currentLocation: "Nuværende placering",
+                title: "Placering"
+            },
+        	legend: "Signaturforklaring",
+        	 about: "Om"
         }
     })
-   
 );

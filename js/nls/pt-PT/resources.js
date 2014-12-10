@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "ã_Unable to create map_Ç"
+            error: "Impossível criar mapa"
         }, 
-        tools: {
-        	legend: "ã_Legend_Ç",
-        	 about: "ã_About_Ç"
+        tools: {         
+            search: {
+                error: "A localização não pode ser encontrada",
+                notWhatYouWanted: "Não é o que queria?",
+                selectAnother: "Selecionar outra localização",
+                currentLocation: "Localização Atual",
+                title: "localização"
+            },
+        	legend: "Legenda",
+        	 about: "Sobre"
         }
     })
-   
 );

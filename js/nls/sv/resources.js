@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "Å_Unable to create map_ö"
+            error: "Det gick inte att skapa kartan"
         }, 
-        tools: {
-        	legend: "Å_Legend_ö",
-        	 about: "Å_About_ö"
+        tools: {         
+            search: {
+                error: "Det gick inte att hitta platsen",
+                notWhatYouWanted: "Är det inte vad du vill ha?",
+                selectAnother: "Välj en annan plats",
+                currentLocation: "Aktuell plats",
+                title: "Plats"
+            },
+        	legend: "Teckenförklaring",
+        	 about: "Om"
         }
     })
-   
 );

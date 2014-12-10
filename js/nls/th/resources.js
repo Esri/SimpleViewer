@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "ก้_Unable to create map_ษฺ"
+            error: "ไม่สามารถสร้างแผนที่ได้"
         }, 
-        tools: {
-        	legend: "ก้_Legend_ษฺ",
-        	 about: "ก้_About_ษฺ"
+        tools: {         
+            search: {
+                error: "ไม่พบตำแหน่งนี้",
+                notWhatYouWanted: "ไม่ใช่สิ่งที่คุณต้องการ?",
+                selectAnother: "เลือกที่ตั้งอื่น",
+                currentLocation: "ตำแหน่งปัจจุบัน",
+                title: "ตำแหน่ง"
+            },
+        	legend: "คำอธิบายแผนที่",
+        	 about: "เกี่ยวกับ"
         }
     })
-   
 );

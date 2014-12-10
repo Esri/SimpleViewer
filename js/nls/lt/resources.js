@@ -1,12 +1,18 @@
 ﻿define(
-   ({
+     ({
         map: {
-            error: "Į_Unable to create map_š"
+            error: "Žemėlapio sukurti nepavyko"
         }, 
-        tools: {
-        	legend: "Į_Legend_š",
-        	 about: "Į_About_š"
+        tools: {         
+            search: {
+                error: "Vietos surasti nepavyko",
+                notWhatYouWanted: "Ne tai ko norėjote?",
+                selectAnother: "Pasirinkite kitą vietą",
+                currentLocation: "dabartinė vieta",
+                title: "Vieta"
+            },
+        	legend: "Legenda",
+        	 about: "Apie"
         }
     })
-   
 );
