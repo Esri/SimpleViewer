@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 34px;
+    height: 38px;
     color: $font-color-dark;
 }
 
@@ -76,7 +76,7 @@
     width: 280px;
     overflow: auto;
     overflow-x: hidden;
-    border-right: 1px solid $border-color;
+    border-right: none;
 }
 
 .esriRTL .drawer-open .content-pane-left {

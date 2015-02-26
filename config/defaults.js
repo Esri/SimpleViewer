@@ -40,7 +40,12 @@ define([], function() {
         //When searchextent is true the geocoder will prioritize results within
         //the current map extent
         "searchExtent": true, 
+        "locationSearch": true,
         "search": true,
+        "searchLayers":[{
+            "id": "",
+            "fields": []
+        }],
         "helperServices": {  
            "geometry":{
             "url": null
