@@ -7,9 +7,11 @@ Simple Viewer is a configurable application template that provides a simple and 
 
 
 [View it live] (http://www.arcgis.com/apps/SimpleViewer/index.html?webmap=6c4e81f90c4b4935945e9b623c5247e0)
+#July 2015 Release Updates
+-  **Custom URL Parameters:** The template now supports the ability to define a custom url parameter along with the search layer and field. This can be used to build applications that display a particular feature at application startup. For example if your app displays parcel features you could define a custom url parameter called parcel and then users can navigate there directly by appending ?parcel=1245243242343 and the map will zoom to that feature on startup. Define these values using by setting the customUrlParam and customUrlLayer properties in config/defaults.js. 
 
 #Features
-**Simple Map Viewer** is a configurable application template that provides a simple user experience for exploring any web map. It has been designed to support a variety of form factors - browsers, phones, and tablets. The template can be configured with the following option: 
+**Simple Map Viewer** is a configurable application template that provides a simple user experience for exploring any web map. It has been designed to support a variety of form factors - browsers, phones, and tablets. The template can be configured with the following options: 
 
 - **Map:** Choose the web map used in your application. 
 - **Title Text:** The application title. The default title is the web map name.
