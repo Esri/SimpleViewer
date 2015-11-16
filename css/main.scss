@@ -145,7 +145,7 @@ margin-right: 10px;
 .esriPopup.light .actionsPane .action {
 position: absolute;
 cursor: pointer;
-background-image: url("http://js.arcgis.com/3.12/esri/css/calcite/images/popup-sprite.png");
+background-image: url("../images/popup-sprite.png");
 width: 12px;
 height: 12px;
 text-indent: -9999px;
@@ -168,6 +168,12 @@ text-indent: -9999px;
   z-index:50;
   @include respond-to(850){
     top:175px;
+  }
+}
+.nolocate #homeDiv{
+  top:55px;
+  @include respond-to(850){
+    top:130px;
   }
 }
 .esriSimpleSlider {
