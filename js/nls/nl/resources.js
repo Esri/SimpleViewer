@@ -11,6 +11,6 @@ define({
       "title": "Locatie"
     },
     "legend": "Legenda",
-    "about": "Over"
+    "about": "Info"
   }
 });

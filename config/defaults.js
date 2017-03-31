@@ -1,4 +1,4 @@
-define([], function() {
+define([], function () {
   //Default configuration settings for the application. This is where you'll define things like a bing maps key,
   //default web map, default app color theme and more. These values can be overwritten by template configuration settings
   //and url parameters.
@@ -20,6 +20,10 @@ define([], function() {
     //Theme defines the background color of the title bar and also the background color of the popup
     //title bar.
     "theme": "#949494",
+    "bodyBg": "#fff",
+    "bodyColor": "#666",
+    "buttonColor": "#2f4f4f",
+    "buttonBg": "#949494",
     "find": null,
     //Setup the app to support a custom url parameter. Use this if you want users
     //to be able to search for a string field in a layer. For example if the web map
@@ -31,8 +35,6 @@ define([], function() {
       "fields": [] //Name of the string field to search
     },
     "customUrlParam": null, //Name of url param. For example parcels
-    //Specify the color used for the closeable drawer titles.
-    "paneltheme": "#ededed",
     "bingmapskey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
     "sharinghost": location.protocol + "//" + "www.arcgis.com",

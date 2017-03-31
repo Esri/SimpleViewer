@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title></title>
-    <!-- Define the versions of IE that will be used to render the page. See Microsoft documentation for details. Optional. -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta charset="utf-8">
-    <meta name="fragment" content="!">
-    <!--Use protocol relative urls that way if the browser is viewing the page via HTTPS the js/css file will be requested using the HTTPS protocol-->
-    <link rel="stylesheet" href="//js.arcgis.com/3.18/esri/css/calcite/calcite.css">
-    <link rel="stylesheet"  href="//js.arcgis.com/3.18/esri/css/esri.css">
-    <!--Load any application specific styles-->
-    <link rel="stylesheet" href="css/main.css">
-    <!--[if (lt IE 9)]>
+  <title></title>
+  <!-- Define the versions of IE that will be used to render the page. See Microsoft documentation for details. Optional. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="fragment" content="!">
+  <!--Use protocol relative urls that way if the browser is viewing the page via HTTPS the js/css file will be requested using the HTTPS protocol-->
+  <link rel="stylesheet" href="//js.arcgis.com/3.20/esri/css/calcite/calcite.css">
+  <link rel="stylesheet" href="//js.arcgis.com/3.20/esri/css/esri.css">
+  <!--Load any application specific styles-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if (lt IE 9)]>
       <script  src="js/selectivizr-min.js"></script>
       <link rel="stylesheet" href="css/ie.css"/>
     <![endif]-->
 </head>
+
 <body class="calcite app-loading">
   <div class="loading-indicator">
     <div class="loading-message" id="loading_message"></div>
   </div>
-   <!--The ArcGIS API for JavaScript provides bidirectional support.  When viewing the application in an right to left (rtl) language like Hebrew and Arabic the map needs to remain in left-to-right (ltr) mode. Specify this by setting the dir attribute on the div to ltr. -->
-       <div id="border_container" class="border-container-outer">
-        <div id="cp_left" class="content-pane-left">
-          <div id="ac-container" class="ac-container node-hidden">
-             <div id="legend-cont">
-                 <input id="legend-ac" type="checkbox" checked/>
-                 <label class="ac-label ab fc" id="legend-label" for="legend-ac"></label>
-                 <div class="article ac-large" id="legendDiv"></div>
-             </div>
-             <div id="about-cont">
-                <input id="about-ac" type="checkbox" checked/>
-                <label class="ac-label ab fc" id="about-label" for="about-ac"></label>
-                <div class="article ac-medium" id="aboutDiv"></div>
-             </div>
-          </div>
+  <!--The ArcGIS API for JavaScript provides bidirectional support.  When viewing the application in an right to left (rtl) language like Hebrew and Arabic the map needs to remain in left-to-right (ltr) mode. Specify this by setting the dir attribute on the div to ltr. -->
+  <div id="border_container" class="border-container-outer">
+    <div id="cp_left" class="content-pane-left">
+      <div id="ac-container" class="ac-container node-hidden">
+        <div id="legend-cont">
+          <input id="legend-ac" type="checkbox" checked/>
+          <label class="ac-label ab bc bb" id="legend-label" for="legend-ac"></label>
+          <div class="article ac-large" id="legendDiv"></div>
         </div>
-        <div id="cp_center" class="content-pane-center">
-            <div class="top-bar bg">
-                <i id="toggle_button" class="hamburger-button icon-menu fc"></i>
-                <div id="title" class="top-bar-title"></div>
-                <div id="search" class="geocoder"></div>
-            </div>
-         <div id="mapDiv" dir="ltr"></div>
+        <div id="about-cont">
+          <input id="about-ac" type="checkbox" checked/>
+          <label class="ac-label ab bc bb" id="about-label" for="about-ac"></label>
+          <div class="article ac-medium" id="aboutDiv"></div>
         </div>
+      </div>
     </div>
-      <script type="text/javascript">
-        var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-        var dojoConfig = {
-          async: true,
-          // The locationPath logic below may look confusing but all its doing is
-          // enabling us to load the api from a CDN and load local modules from the correct location.
-          packages: [{
-            name: "application",
-            location: package_path + '/js'
-                }, {
-            name: "config",
-            location: package_path + '/config'
-                }, {
-            name: "arcgis_templates",
-            location: package_path + '/..'
-                }]
-        };
-      // Have to handle a locale parameter before dojo is loaded
-        if (location.search.match(/locale=([\w\-]+)/)) {
-            dojoConfig.locale = RegExp.$1;
-        }
-      </script>
-    <script type="text/javascript" src="//js.arcgis.com/3.18/"></script>
-    <script type="text/javascript">
-        require([
-                "config/templateConfig",
-                "application/template",
-                "application/main"
-            ], function (
-          templateConfig,
-          Template,
-          Main
-        ) {
-          // create the template. This will take care of all the logic required for template applications
-          var myTemplate = new Template(templateConfig);
-          // create my main application. Start placing your logic in the main.js file.
-          var myApp = new Main();
-          // start template
-          myTemplate.startup().then(function (config) {
-            // The config object contains the following properties: helper services, (optionally)
-            // i18n, appid, webmap and any custom values defined by the application.
-            // In this example we have one called theme.
-            myApp.startup(config);
-          }, function (error) {
-            // something went wrong. Let's report it.
-            myApp.reportError(error);
-          });
+    <div id="cp_center" class="content-pane-center">
+      <div class="top-bar bg">
+        <i id="toggle_button" class="hamburger-button icon-menu bc"></i>
+        <div id="title" class="top-bar-title"></div>
+        <div id="search" class="geocoder"></div>
+      </div>
+      <div id="mapDiv" dir="ltr"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+    var dojoConfig = {
+      async: true,
+      // The locationPath logic below may look confusing but all its doing is
+      // enabling us to load the api from a CDN and load local modules from the correct location.
+      packages: [{
+        name: "application",
+        location: package_path + '/js'
+      }, {
+        name: "config",
+        location: package_path + '/config'
+      }, {
+        name: "arcgis_templates",
+        location: package_path + '/..'
+      }]
+    };
+    // Have to handle a locale parameter before dojo is loaded
+    if (location.search.match(/locale=([\w\-]+)/)) {
+      dojoConfig.locale = RegExp.$1;
+    }
+  </script>
+  <script type="text/javascript" src="//js.arcgis.com/3.20/"></script>
+  <script type="text/javascript">
+    require([
+      "config/templateConfig",
+      "application/template",
+      "application/main"
+    ], function (
+      templateConfig,
+      Template,
+      Main
+    ) {
+        // create the template. This will take care of all the logic required for template applications
+        var myTemplate = new Template(templateConfig);
+        // create my main application. Start placing your logic in the main.js file.
+        var myApp = new Main();
+        // start template
+        myTemplate.startup().then(function (config) {
+          // The config object contains the following properties: helper services, (optionally)
+          // i18n, appid, webmap and any custom values defined by the application.
+          // In this example we have one called theme.
+          myApp.startup(config);
+        }, function (error) {
+          // something went wrong. Let's report it.
+          myApp.reportError(error);
         });
-    </script>
+      });
+  </script>
 </body>
+
 </html>

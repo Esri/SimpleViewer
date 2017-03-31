@@ -11,6 +11,6 @@ define({
       "title": "Position"
     },
     "legend": "Legende",
-    "about": "Info"
+    "about": "Informationen"
   }
 });

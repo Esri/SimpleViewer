@@ -10,7 +10,7 @@ define({
       "currentLocation": "Praegune asukoht",
       "title": "Asukoht"
     },
-    "legend": "Legend",
+    "legend": "Legendiga kaart",
     "about": "Info"
   }
 });

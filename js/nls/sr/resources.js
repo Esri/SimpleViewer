@@ -11,6 +11,6 @@ define({
       "title": "Lokacija"
     },
     "legend": "Legenda",
-    "about": "Više informacija"
+    "about": "Osnovni podaci"
   }
 });

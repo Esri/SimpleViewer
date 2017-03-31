@@ -10,7 +10,7 @@ define({
       "currentLocation": "الموقع الحالي",
       "title": "الموقع"
     },
-    "legend": "وسيلة الإيضاح",
-    "about": "حول"
+    "legend": "وسيلة إيضاح",
+    "about": "نبذة عن"
   }
 });

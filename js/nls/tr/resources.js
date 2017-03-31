@@ -11,6 +11,6 @@ define({
       "title": "Konum"
     },
     "legend": "Gösterim",
-    "about": "Hakkında"
+    "about": "Yaklaşık"
   }
 });
