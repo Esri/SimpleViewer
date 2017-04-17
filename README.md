@@ -3,10 +3,7 @@ simple-viewer-template
 
 Simple Viewer is a configurable application template that provides a simple and easy to use framework for viewing web maps in browsers or devices.
 
-[![Screenshot](https://dl.dropboxusercontent.com/u/24627279/screenshots/simple_th.png "Screenshot")](http://www.arcgis.com/apps/SimpleViewer/index.html?webmap=6c4e81f90c4b4935945e9b623c5247e0)
-
-
-[View it live] (http://www.arcgis.com/apps/SimpleViewer/index.html?webmap=6c4e81f90c4b4935945e9b623c5247e0)
+[View it live](http://www.arcgis.com/apps/SimpleViewer/index.html?webmap=6c4e81f90c4b4935945e9b623c5247e0)
 #July 2015 Release Updates
 -  **Custom URL Parameters:** The template now supports the ability to define a custom url parameter along with the search layer and field. This can be used to build applications that display a particular feature at application startup. For example if your app displays parcel features you could define a custom url parameter called parcel and then users can navigate there directly by appending ?parcel=1245243242343 and the map will zoom to that feature on startup. Define these values using by setting the customUrlParam and customUrlLayer properties in config/defaults.js. 
 
@@ -73,5 +70,4 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 A copy of the license is available in the repository's license.txt file.
-[](Esri Tags: ArcGIS Online Web Application Templates) 
-[](Esri Language: JavaScript)
+
