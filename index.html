@@ -7,8 +7,8 @@
   <meta charset="utf-8">
   <meta name="fragment" content="!">
   <!--Use protocol relative urls that way if the browser is viewing the page via HTTPS the js/css file will be requested using the HTTPS protocol-->
-  <link rel="stylesheet" href="https://js.arcgis.com/3.21/esri/css/calcite/calcite.css">
-  <link rel="stylesheet" href="https://js.arcgis.com/3.21/esri/css/esri.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/themes/calcite/esri/esri.css">
   <!--Load any application specific styles-->
   <link rel="stylesheet" href="css/main.css">
   <!--[if (lt IE 9)]>
@@ -28,12 +28,12 @@
         <div id="legend-cont">
           <input id="legend-ac" type="checkbox" checked/>
           <label class="ac-label ab bc bb" id="legend-label" for="legend-ac"></label>
-          <div class="article ac-large" id="legendDiv"></div>
+          <div class="article bg fc ac-large" id="legendDiv"></div>
         </div>
         <div id="about-cont">
           <input id="about-ac" type="checkbox" checked/>
           <label class="ac-label ab bc bb" id="about-label" for="about-ac"></label>
-          <div class="article ac-medium" id="aboutDiv"></div>
+          <div class="article bg fc ac-medium" id="aboutDiv"></div>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
       dojoConfig.locale = RegExp.$1;
     }
   </script>
-  <script type="text/javascript" src="https://js.arcgis.com/3.21/"></script>
+  <script type="text/javascript" src="https://js.arcgis.com/3.22/"></script>
   <script type="text/javascript">
     require([
       "config/templateConfig",
